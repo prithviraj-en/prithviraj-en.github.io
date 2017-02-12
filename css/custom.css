@@ -13,8 +13,9 @@ section
     {
         width:100%;
     text-align: center;
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 25px;
+  font-size: 16px;
   
     }
 
@@ -54,6 +55,10 @@ section
 }
 #blog a{
   color:white;
+}
+
+a{
+  color:black;
 }
 
 .container{
