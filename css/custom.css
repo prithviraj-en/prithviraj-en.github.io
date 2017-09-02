@@ -1,13 +1,8 @@
- form input,textarea
- {
-  color:black;
- }
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
- form
- {
-  border: 12px solid rgb(100,100,100);
-  padding: 10px;
- }
+body{
+  font-family: 'Raleway', sans-serif;
+}
 
 section
     {
@@ -24,7 +19,6 @@ section
 {
   
   background: #009688;
-  font-family: Papyrus,fantasy;
   font-size: 33px;
   font-weight:800;
   color: #000000;
@@ -70,7 +64,6 @@ html,body {
 }
 
 h1 {
-  font-family: 'Antic Slab', serif;
   font-size:70px;
   color:#000000;
 }
@@ -84,43 +77,6 @@ color:#2A2B2E;
 }
 
 /* Custom container */
-.container-full {
-  margin: 0 auto;
-  width: 100%;
-  min-height:100%;
-  color:#eee;
-  overflow:hidden;
-  background:#A4C2A8;
-  
-}
-
-
-  
-.blogpost
-{
-  width: 280px; 
-  height: 200px;
-  padding: 10px; 
-  background: #7A6788;
-  font-family: georgia, serif;
-  font-size: 13px;
-  color: #000000;
-  font-style: normal;
-  font-weight: normal;
-  margin: 20px;
-  font-variant: normal;
-  text-align: left;
-  letter-spacing: 0.7px;
-  line-height: 20px;
-  word-wrap:break-word;
-  text-overflow: ellipsis;
-  display:inline-block;
-  overflow:hidden;
-border-radius: 3px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-  #white-space:nowrap; 
-}
 
 .navbar
 {
@@ -134,78 +90,9 @@ margin-bottom: 0px;
 
 
 
-.panel-group 
-{
-  color: rgb(0,0,0);
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-}
 
-.panel
-{
-  background-color: #7BA098;
-}
 
-.skill
-{
-   
-  height: 140px;
-  padding: 7px; 
-  background: rgb(210,210,210);
-  border:rgb(180,180,180);
-  font-family: georgia, serif;
-  font-size: 50px;
-  color: #000000;
-  font-style: normal;
-  font-weight: normal;
-  margin: 20px;
-  font-variant: normal;
-  text-align:justify;
-}
-
-.work
-{
-  width: 100%;
-  margin: 20px;
-  padding: 10px;
-  background: rgb(130,35,0);
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
- 
-}
-
-.work-title
-{
-  color:#CCA759;
-  font-size:24px;
-}
-
-.work-body
-{
-  color:#B28013;
-  font-size:20px;
-}
-
-.post-title
-{
-  font-family: georgia, serif;
-  font-size: 20px;
-  color: #000000;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-align: center;
-}
-
-.post-content
-{
-  font-family: georgia, serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-align: left;
-}  
 
 .btn{
 margin:4px;
@@ -228,16 +115,6 @@ margin:4px;
    background-color:rgba(0,0,0,0);
   border-color:rgb(255,255,250);
   border-width:1px;
-}
-
-.panel-title
-{
-font-size:26px;
-}
-
-.panel-body
-{
-font-size:20px;
 }
 
 #footer
