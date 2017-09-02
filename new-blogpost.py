@@ -24,8 +24,13 @@ with open("index.html") as inf:
 	soup_index = bs4.BeautifulSoup(txt)
 
 blog_list_div = soup_index.find_all("ul",class_="blog-list")
-el = "<li><a href='blog/"+file_name+"'>"+title+"</a></li>"
-blog_list_div.append(el)
+#el = "<li><a href='blog/"+file_name+"'>"+title+"</a></li>"
+a_tag = soup.new_tag("a", href="blog/"+file_name)
+a_tag.string = title
+li_tag = soup.new_tag("li")
+li_tag.append(a_tag)
+blog_list_div[0].append(li_tag)
+print(soup_index.prettify("utf-8"))
 
 with open("index.html",'wb') as inf:
 	inf.write(soup_index.prettify("utf-8"))
