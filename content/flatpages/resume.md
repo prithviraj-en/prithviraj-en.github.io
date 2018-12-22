@@ -54,12 +54,14 @@ and Testing team.
 **Big Data, Machine Learning, Artificial Intelligence, Deep Learning** , Apache Spark, Airflow, SQL, TensorFlow,
 Scikit-learn, Pandas, Numpy, SciPy, Web Development, Quantitative Analytics, **Python** , Django, Flask, AWS,
 **JavaScript** , Microsoft Excel, Amazon Redshift, Databricks
-    
+
+
 # PROJECTS
 
 ### Computer Vision Sudoku Solver
 [Github Link](http://petejadhav.github.io/cam-sudoku)
-Point & Solve - Point your camera and solve the Sudoku puzzle
+Deep Learning Convolutional Neural Network (**CNN**) implementing YOLO algorithm to detect and solve sudoku
+puzzles in images.
 
 ## BlockChat
 [Github Link](http://petejadhav.github.io/blockchat)
@@ -67,7 +69,7 @@ BlockChain inspired immutable decentralized P2P chat application
 
 ## Barracuda
 [Github Link](http://petejadhav.github.io/barracuda)
-Flat Blog Framework using VueJS and Python
+Flat Blog Framework using VueJS (**Javascript**) and Python implementing extended Markdown articles.
 
 ## Gesture and Eyeball Movement Recognition using OpenCV
 HOG & Haar-classifier based eye detector using OpenCV
@@ -77,7 +79,8 @@ HOG & Haar-classifier based eye detector using OpenCV
 Simple 2D Game development framework in JavaScript
 
 ## Website & Android App for GoGreen Expo - Delhi 2016
-    
+
+
 # COURSES/CERTIFICATIONS
 
 ### Applied Artificial Intelligence with Deep Learning
