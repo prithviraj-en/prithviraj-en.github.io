@@ -23,7 +23,7 @@ Apache **Spark** , Apache **Airflow** , **Databricks** , Amazon **Redshift** , e
 - Developed highly scalable Data Insights Engine for Pharmaceutical Sales Reps using Apache Spark.
 - Developed automation tools in **Python (** for Big Data) to fast-track development, unit-testing and deployment
 of client-specific deliverables.
-- Currently developing scalable anomaly detection algorithm using Deep Learning Autoencoders in **TensorFlow**. 
+- Currently developing scalable anomaly detection algorithm using **Deep Learning** Autoencoders in **TensorFlow**. 
 - Currently also developing a horizontally scalable Recommendation Engine using Matrix Factorization (SVD -
 Alternating Least Squares).
 
