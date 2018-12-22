@@ -23,15 +23,9 @@ Apache **Spark** , Apache **Airflow** , **Databricks** , Amazon **Redshift** , e
 - Developed highly scalable Data Insights Engine for Pharmaceutical Sales Reps using Apache Spark.
 - Developed automation tools in **Python (** for Big Data) to fast-track development, unit-testing and deployment
 of client-specific deliverables.
-- Currently also working on developing a horizontally scalable Recommendation Engine using Matrix
-Factorization (SVD - Alternating Least Squares).
-
-### CandidSpice
-Columnist
-```
-May 2017 to Present
-```
-Write on topics ranging from Politics and History to Mythology and Evolution.
+- Currently developing scalable anomaly detection algorithm using Deep Learning Autoencoders in **TensorFlow**. 
+- Currently also developing a horizontally scalable Recommendation Engine using Matrix Factorization (SVD -
+Alternating Least Squares).
 
 ### Orgzit
 Front-End Developer
@@ -54,16 +48,6 @@ Sep 2014 to Aug 2016
 Built an auto-gyro assisted controlled descent space vehicle for the Cansat Competition held by the American
 Astronautical Society (AAS) in association with NASA, held at Texas. Was part of Structural/Mechanical Design
 and Testing team.
-
-# EDUCATION
-
-### Delhi Technological University (formerly Delhi College of Engineering)
-Bachelor's in Technology
-```
-2013 to 2017
-```
-### Sanskriti School, Chanakyapuri, New Delhi 2008 to 2013
-
     
 # SKILLS
 
@@ -116,3 +100,13 @@ FreeCodeCamp
 ```
 Feb 2016
 ```
+
+# EDUCATION
+
+### Delhi Technological University (formerly Delhi College of Engineering)
+Bachelor's in Technology
+```
+2013 to 2017
+```
+### Sanskriti School, Chanakyapuri, New Delhi 2008 to 2013
+
