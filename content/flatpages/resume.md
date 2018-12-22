@@ -80,7 +80,7 @@ Simple 2D Game development framework in JavaScript
 
 ## Website & Android App for GoGreen Expo - Delhi 2016
 
-
+    
 # COURSES/CERTIFICATIONS
 
 ### Applied Artificial Intelligence with Deep Learning
@@ -111,5 +111,8 @@ Bachelor's in Technology
 ```
 2013 to 2017
 ```
-### Sanskriti School, Chanakyapuri, New Delhi 2008 to 2013
+### Sanskriti School, Chanakyapuri, New Delhi 
+```
+2008 to 2013
+```
 
