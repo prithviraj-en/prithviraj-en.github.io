@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>{{category_name}}</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <section class="hero is-medium is-dark is-bold">
+            <div class="hero-body">
+                <div class="container"></div>
+                <h1 class="is-large is-capitalized title">{{category_name}}</h1>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="article-list">
+                <a class="is-large is-capitalized article-item is-hidden template-article" href="/{{category_name}}/{{article_link}}.html">{{article_title}}</a>
+            </div>
+        </section>
+    </body>
+</html>

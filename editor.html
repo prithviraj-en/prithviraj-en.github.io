@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="editor/css/editormd.min.css" />
+    </head>
+    <body>
+        <div id="editor">
+            <!-- Tips: Editor.md can auto append a `<textarea>` tag -->
+            <textarea id="md-text" style="display:none;">### Hello Editor.md !</textarea>
+        </div>
+        <div class="flattr-panel">
+            <label>
+                Select Category Name for page : 
+                <select id='selectcatname'>
+                </select>
+            </label>
+            <input type='text' id='filename' placeholder="Title of your Page">
+            <button class="flattr-control save-files">Save Files</button>
+            <br>
+            <input type='text' id='categoryname' placeholder="New Category Name">
+            <button class="flattr-control save-cat">Create Category</button>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="editor/editormd.min.js"></script>
+        <script type="text/javascript">
+            var dev_server_path = "http://localhost:5000/"
+            
+            populateCategorySelect = function(){
+                $('select#selectcatname')[0].innerHTML = ""
+                var createCategorySelect = $.get(dev_server_path+"get_categories")
+                    .done(function(data){
+                        data['categories'].forEach((element,i) => {
+                            $('select#selectcatname').append('<option id=' + i + ' value=' + element + '>' + element + '</option>');                            
+                        });
+                    })
+                    .fail(function(error){
+                        console.log(error);
+                    })
+            }
+
+            $(function() {
+                var editor = editormd("editor", {
+                    // width: "100%",
+                    // height: "100%",
+                    // markdown: "xxxx",     // dynamic set Markdown text
+                    path : "editor/lib/"  // Autoload modules mode, codemirror, marked... dependents libs path
+                });
+
+                populateCategorySelect();                
+            });
+
+            $('.save-files')[0].addEventListener("click", function(e){
+                var filename = $('input#filename')[0].value.toLowerCase().replace(/ /g,"_") //"blog-example"
+                var category = $('select#selectcatname')[0].value.toLowerCase()
+                var md_text = $('textarea#md-text')[0].value;
+                var html_text = $('div.editormd-preview')[0].innerHTML;
+                console.log(filename)
+                var save_md_req = $.post(url=dev_server_path+"save_md", data={filename:filename,category:category,text:md_text})
+                    .done(function() {
+                        console.log("MD file saved");
+                    })
+                    .fail(function(msg) {
+                        console.log("MD Save Error - "+msg);
+                    })
+
+                var save_html_req = $.post(url=dev_server_path+"save_html", data={filename:filename,category:category,text:html_text})
+                    .done(function() {
+                        console.log("HTML file saved");
+                    })
+                    .fail(function(msg) {
+                        console.log("HTML Save Error - "+msg);
+                    })
+            });
+
+            $('button.save-cat')[0].addEventListener("click", function(e){
+                var catname = $('input#categoryname')[0].value.toLowerCase().replace(/ /g,"_");
+                var save_md_req = $.post(url=dev_server_path+"create_category", data={category:catname})
+                    .done(function() {
+                        console.log("Category created");
+                        populateCategorySelect()
+                    })
+                    .fail(function(msg) {
+                        console.log("Category creation Error - "+msg);
+                    })
+            });            
+        </script>
+    </body>
+</html>
